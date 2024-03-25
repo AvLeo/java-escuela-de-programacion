@@ -1,17 +1,44 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
+import Calculadora.Calculadora;
+import Calculadora.menuCalculadora;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner leer = new Scanner(System.in);
+        System.out.print("Ingrese la longitud de la libreta de contactos: ");
+        int cantidadContactos = leer.nextInt();
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        String[] nombres = new String[cantidadContactos];
+        // ["Hola","Chau","!"]
+        //    0      1     2
+
+
+
+        for (int i = 0; i < nombres.length; i++) {
+            nombres[i] = "Numero :" + i;
+            System.out.println("N°: " + nombres[i]);
         }
+        // Calculadora
+
     }
+
+
+
+    /*
+    1- Menu inicial
+            -Calculadora
+                    * Sumar
+                    * Restar
+                    * MOD
+            - Enviar mensaje de Bienvenida
+
+            - Calcular Area de un
+
+
+
+     */
 }
